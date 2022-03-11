@@ -1,3 +1,4 @@
 config.py
 database.db
 .idea
+__pycache__
