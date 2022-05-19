@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "romaprivatebot"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyQiwiP2P = "^2.0.1"
+aiogram = "^2.20"
+python-dotenv = "0.17.1"
+pymongo = "^4.1.1"
+motor = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

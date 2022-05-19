@@ -1,4 +1,4 @@
-config.py
+.env
 database.db
 .idea
 __pycache__
