@@ -57,7 +57,11 @@ async def cancel(msg: types.Message, state: FSMContext):
 
 @dp.message_handler(content_types='any', state=BROADCAST_STATE)
 async def broadcast2(msg: types.Message):
-    for row in db.get_users():
+    all_users = db.get_users()
+
+    await msg.answer(f'Начинаю рассылку (юзеров: {len(all_users)})')
+
+    for row in all_users:
         user_id = row[0]
 
         try:
