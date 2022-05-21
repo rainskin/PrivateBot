@@ -1,5 +1,13 @@
-from aiogram.utils import executor
+import logging
 
-from handlers import dp
+import handlers
+from async_tg_bot import run
 
-executor.start_polling(dp)
+logging.basicConfig(level=20, filemode='a', filename='.log')
+
+handlers.setup()
+
+run(
+    parse_mode='html',
+    disable_web_page_preview=True,
+)
