@@ -1,7 +1,7 @@
 import logging
 
 import handlers
-from async_tg_bot import run
+from bots_api import run
 
 logging.basicConfig(level=20, filemode='a', filename='.log')
 

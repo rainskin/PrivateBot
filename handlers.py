@@ -3,7 +3,7 @@ import time
 import config
 import keyboards as kb
 import texts
-from async_tg_bot import *
+from bots_api import *
 from loader import db, qiwi
 
 ADMIN = 'admin'

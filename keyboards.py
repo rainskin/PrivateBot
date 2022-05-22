@@ -1,4 +1,4 @@
-from async_tg_bot.types import *
+from bots_api.types import *
 
 main = ReplyKeyboardMarkup(
     keyboard=[
